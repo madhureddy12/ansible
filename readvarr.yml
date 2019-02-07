@@ -1,0 +1,11 @@
+---
+ - hosts: all
+   vars_prompt:
+    name: v1
+    prompt: enter somthing heare.
+   tasks:
+   - name: it will takes the value
+     debug: 
+      msg: "this is the output{{v1}}"
+
+    
