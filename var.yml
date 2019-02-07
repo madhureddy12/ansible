@@ -1,0 +1,9 @@
+---
+ - hosts: all
+   vars:
+    mycontent: "playbook for passing vars"
+   tasks: 
+    - copy: 
+       dest: /home/ansible/madhu.html
+       content: "{{mycontent}}"
+
